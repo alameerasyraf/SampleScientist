@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="DtXMzr" name="SampleScientist" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="1" jucerFormatVersion="1" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
+              pluginManufacturer="A. Asyraf" pluginManufacturerCode="AAA1"
+              pluginVST3Category="Instrument,Synth" displaySplashScreen="1"
+              pluginRTASCategory="1,16,4,8,8192" pluginVSTCategory="kPlugCategSynth">
+  <MAINGROUP id="mVSaGO" name="SampleScientist">
+    <GROUP id="{3546CDF3-4C0E-FEA3-100B-D0331D9D4B44}" name="Resources">
+      <FILE id="Y0qqDM" name="belowLogo.png" compile="0" resource="1" file="belowLogo.png"/>
+      <FILE id="enZXYP" name="normalLogo.png" compile="0" resource="1" file="normalLogo.png"/>
+      <FILE id="iKoUje" name="background.png" compile="0" resource="1" file="background.png"/>
+    </GROUP>
+    <GROUP id="{9789D56D-F00A-1F40-244E-F51BB6D85E02}" name="Source">
+      <GROUP id="{D1A1F46C-9B13-0EC2-687B-147D9EF403B3}" name="MiniBPM">
+        <FILE id="CmiM34" name="MiniBpm.cpp" compile="1" resource="0" file="Source/MiniBPM/MiniBpm.cpp"/>
+        <FILE id="ptzbAu" name="MiniBpm.h" compile="0" resource="0" file="Source/MiniBPM/MiniBpm.h"/>
+      </GROUP>
+      <GROUP id="{4C1F26F8-F151-3406-966E-29A484F3268F}" name="SoundTouch">
+        <FILE id="f72cxW" name="AAFilter.cpp" compile="1" resource="0" file="Source/SoundTouch/AAFilter.cpp"/>
+        <FILE id="dqVPRk" name="AAFilter.h" compile="0" resource="0" file="Source/SoundTouch/AAFilter.h"/>
+        <FILE id="yEAdQT" name="BPMDetect.cpp" compile="1" resource="0" file="Source/SoundTouch/BPMDetect.cpp"/>
+        <FILE id="CowPr6" name="BPMDetect.h" compile="0" resource="0" file="Source/SoundTouch/BPMDetect.h"/>
+        <FILE id="skoIzC" name="cpu_detect.h" compile="0" resource="0" file="Source/SoundTouch/cpu_detect.h"/>
+        <FILE id="MPH1gJ" name="cpu_detect_x86.cpp" compile="1" resource="0"
+              file="Source/SoundTouch/cpu_detect_x86.cpp"/>
+        <FILE id="EBXuLb" name="FIFOSampleBuffer.cpp" compile="1" resource="0"
+              file="Source/SoundTouch/FIFOSampleBuffer.cpp"/>
+        <FILE id="gFkOKk" name="FIFOSampleBuffer.h" compile="0" resource="0"
+              file="Source/SoundTouch/FIFOSampleBuffer.h"/>
+        <FILE id="kKhakV" name="FIFOSamplePipe.h" compile="0" resource="0"
+              file="Source/SoundTouch/FIFOSamplePipe.h"/>
+        <FILE id="IPXjSp" name="FIRFilter.cpp" compile="1" resource="0" file="Source/SoundTouch/FIRFilter.cpp"/>
+        <FILE id="IbtbnY" name="FIRFilter.h" compile="0" resource="0" file="Source/SoundTouch/FIRFilter.h"/>
+        <FILE id="SjJOV0" name="InterpolateCubic.cpp" compile="1" resource="0"
+              file="Source/SoundTouch/InterpolateCubic.cpp"/>
+        <FILE id="hmFyjj" name="InterpolateCubic.h" compile="0" resource="0"
+              file="Source/SoundTouch/InterpolateCubic.h"/>
+        <FILE id="gxRUlT" name="InterpolateLinear.cpp" compile="1" resource="0"
+              file="Source/SoundTouch/InterpolateLinear.cpp"/>
+        <FILE id="NMeaHg" name="InterpolateLinear.h" compile="0" resource="0"
+              file="Source/SoundTouch/InterpolateLinear.h"/>
+        <FILE id="ZFPmmt" name="InterpolateShannon.cpp" compile="1" resource="0"
+              file="Source/SoundTouch/InterpolateShannon.cpp"/>
+        <FILE id="rxaJ5n" name="InterpolateShannon.h" compile="0" resource="0"
+              file="Source/SoundTouch/InterpolateShannon.h"/>
+        <FILE id="vuLVKs" name="mmx_optimized.cpp" compile="1" resource="0"
+              file="Source/SoundTouch/mmx_optimized.cpp"/>
+        <FILE id="h2PMor" name="PeakFinder.cpp" compile="1" resource="0" file="Source/SoundTouch/PeakFinder.cpp"/>
+        <FILE id="G6EP91" name="PeakFinder.h" compile="0" resource="0" file="Source/SoundTouch/PeakFinder.h"/>
+        <FILE id="UD3KfS" name="RateTransposer.cpp" compile="1" resource="0"
+              file="Source/SoundTouch/RateTransposer.cpp"/>
+        <FILE id="jq8di0" name="RateTransposer.h" compile="0" resource="0"
+              file="Source/SoundTouch/RateTransposer.h"/>
+        <FILE id="KRqj4k" name="SoundTouch.cpp" compile="1" resource="0" file="Source/SoundTouch/SoundTouch.cpp"/>
+        <FILE id="Y0rUL8" name="SoundTouch.h" compile="0" resource="0" file="Source/SoundTouch/SoundTouch.h"/>
+        <FILE id="AjswRz" name="sse_optimized.cpp" compile="1" resource="0"
+              file="Source/SoundTouch/sse_optimized.cpp"/>
+        <FILE id="vkOF4I" name="STTypes.h" compile="0" resource="0" file="Source/SoundTouch/STTypes.h"/>
+        <FILE id="CqeBej" name="TDStretch.cpp" compile="1" resource="0" file="Source/SoundTouch/TDStretch.cpp"/>
+        <FILE id="jCun1w" name="TDStretch.h" compile="0" resource="0" file="Source/SoundTouch/TDStretch.h"/>
+      </GROUP>
+      <FILE id="a94c82" name="SamplerBox.cpp" compile="1" resource="0" file="Source/SamplerBox.cpp"/>
+      <FILE id="WyuHiR" name="SamplerBox.h" compile="0" resource="0" file="Source/SamplerBox.h"/>
+      <FILE id="cBjM3f" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="tk6bCp" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="P0VZiX" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="okLCpv" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="SampleScientist" optimisation="4"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="SampleScientist"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_analytics" path="../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_analytics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
