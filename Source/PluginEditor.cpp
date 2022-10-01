@@ -25,6 +25,12 @@ SampleScientistAudioProcessorEditor::SampleScientistAudioProcessorEditor (Sample
 
 SampleScientistAudioProcessorEditor::~SampleScientistAudioProcessorEditor()
 {
+    phaserbButton->removeListener(this);
+    distortionButton->removeListener(this);
+    tremoloButton->removeListener(this);
+    reverbButton->removeListener(this);
+    chorusButton->removeListener(this);
+
     stopTimer();
 }
 
@@ -83,8 +89,6 @@ void SampleScientistAudioProcessorEditor::paint (Graphics& g)
     // Advanced Options
     g.setFont(27.0f);
     g.drawText((*advancedOpButton).getName(), 65, 734, 220, 40, Justification::centred, false);
-
-    //g.drawText((String)audioProcessor.bpmValue, 1365, 734, 220, 40, Justification::centred, false);
 
 }
 

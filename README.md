@@ -1,6 +1,5 @@
-Wanna flip a sample?
+Dissertation Project: VST Plugin (SampleScientist)
 
-Updates:
-1) Working on GUI now
-2) DSP has not begun"# SampleScientist" 
-"# SampleScientist" 
+Author: Al Ameer Asyraf Bin Mohamed Hassan
+
+Note: VST File is built under the Products folder.

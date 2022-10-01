@@ -10,13 +10,11 @@
 
 #include <JuceHeader.h>
 #include "SoundTouch/SoundTouch.h"
-#include "MiniBPM/MiniBpm.h"
 
 using namespace std;
 using namespace juce;
 using namespace dsp;
 using namespace soundtouch;
-using breakfastquay::MiniBPM;
 
 using Filter = IIR::Filter<float>;
 
@@ -205,6 +203,9 @@ private:
     // Pitch Shifting Variables
     unique_ptr<SoundTouch>  pitch_shifter_L;
     unique_ptr<SoundTouch>  pitch_shifter_R;
+
+    // Tempo Variables
+
 
     // Tremolo Variables
     bool                    tremoloState;

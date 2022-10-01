@@ -207,7 +207,7 @@ AudioProcessorValueTreeState::ParameterLayout SampleScientistAudioProcessor::cre
 
     // PHASER
     parameterVector.push_back(make_unique<AudioParameterFloat>("phaserDepth",       "Depth",            0.0f,   1.0f,       1.0f));
-    parameterVector.push_back(make_unique<AudioParameterFloat>("phaserFeedback",    "Feedback",         0.0f,   0.9f,       0.5f));
+    parameterVector.push_back(make_unique<AudioParameterFloat>("phaserFeedback",    "Feedback",         -1.0f,  1.0f,      0.0f));
     parameterVector.push_back(make_unique<AudioParameterFloat>("phaserCntrFreq",    "Center Freq.",     50.0f,  1000.0f,    80.0f));
     parameterVector.push_back(make_unique<AudioParameterFloat>("phaserLFOFreq",     "LFO Frequency",    0.0f,   2.0f,       0.05f));
     parameterVector.push_back(make_unique<AudioParameterFloat>("phaserMix",         "Mix",              0.0f,   1.0f,       1.0f));
@@ -288,17 +288,6 @@ void SampleScientistAudioProcessor::processBlock (AudioBuffer<float>& buffer, Mi
 
     // Changing Tempo of Audio Using Slider
     tempoProcessing(buffer);
-
-    MiniBPM bpmTest(getSampleRate());
-    //Tempo Information
-
-    AudioBuffer<float> output(1, buffer.getNumSamples() * 2);
-
-    AudioDataConverters::interleaveSamples(buffer.getArrayOfReadPointers(), output.getWritePointer(0), buffer.getNumSamples(), buffer.getNumChannels());
-
-    //bpmTest->process(buffer.getReadPointer(0), buffer.getNumSamples());
-    //bpmValue = bpmTest.estimateTempoOfSamples(output.getWritePointer(0), output.getNumSamples());
-    bpmValue = output.getNumSamples();
 
     // Delay Using Slider
     tremoloProcessing(buffer);
@@ -414,7 +403,7 @@ void SampleScientistAudioProcessor::tempoProcessing(AudioBuffer<float>& buffer)
     
 }
 
-//==============================================================================
+//================  ==============================================================
 // FILTER PROCESSING
 void SampleScientistAudioProcessor::filterProcessing(AudioBuffer<float>& buffer)
 {
